@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const MenuFive = () => {
+const LearnMore = () => {
     const navigate = useNavigate()
     const toggleNavigation = () => {
         navigate('/')
@@ -16,4 +16,4 @@ const MenuFive = () => {
     )
 }
 
-export default MenuFive
+export default LearnMore

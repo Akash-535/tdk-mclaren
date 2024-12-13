@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const MenuFour = () => {
+const About = () => {
     const navigate = useNavigate()
     const toggleNavigation = () => {
         navigate('/')
@@ -16,4 +16,4 @@ const MenuFour = () => {
     )
 }
 
-export default MenuFour
+export default About

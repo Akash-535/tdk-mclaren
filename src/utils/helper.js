@@ -1,23 +1,23 @@
 export const HEADER_LIST = [
     {
         item: "Menu One ",
-        link: "/menu-one"
+        link: "/about"
     },
     {
         item: "Menu Two ",
-        link: "/menu-two"
+        link: "/blog"
     },
     {
         item: "Menu Three ",
-        link: "/menu-three"
+        link: "/learn"
     },
     {
         item: "Menu Four ",
-        link: "/menu-four"
+        link: "/contact"
     },
     {
         item: "Menu Five ",
-        link: "/menu-five"
+        link: "/gallery"
     }
 ]
 

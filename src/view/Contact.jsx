@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const MenuThree = () => {
+const Contact = () => {
     const navigate = useNavigate()
     const toggleNavigation = () => {
         navigate('/')
@@ -16,4 +16,4 @@ const MenuThree = () => {
     )
 }
 
-export default MenuThree
+export default Contact

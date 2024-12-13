@@ -19,7 +19,7 @@ const MySwiper = () => {
             modules={[Autoplay, Pagination]} className="mySwiper !pb-12">
             {MY_SWIPER_LIST.map((obj, i) => (
                 <SwiperSlide key={i}>
-                    <img className='max-h-[665px] w-full max-w-[1440px] mx-auto' src={obj} alt="" />
+                    <img className='max-h-[665px] w-full max-w-[1440px] mx-auto object-cover' src={obj} alt="" />
                 </SwiperSlide>
             ))}
         </Swiper>

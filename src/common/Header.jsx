@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { HEADER_LIST } from '../utils/helper';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { SearchIcon } from '../utils/icons';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
     const toggleSidebar = () => setOpen(!open);
-    const navigate = useNavigate()
-    const toggleNavigation = (link) => {
-        navigate(link)
-    }
     useEffect(() => {
         const handleOverflow = () => {
             if (open && window.innerWidth < 1024) {
@@ -36,11 +32,10 @@ const Header = () => {
                 <div className='flex justify-between w-full pt-[27px] items-end container max-xl:pl-5 max-xl:pr-3'>
                     <div className={`flex gap-6 max-lg:flex-col max-lg:justify-center max-lg:items-center ${open ? 'max-lg:z-10 max-lg:translate-x-0 max-lg:bg-tory-blue max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full duration-500 ease-linear blur-[80%] justify-center items-center' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
                         {HEADER_LIST.map((obj, i) => (
-                            <ul key={i}>
-                                <li className='flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:h-0.5 after:bg-white pb-0.5'>
-                                    <a onClick={() => toggleNavigation(obj.link)} href={obj.link} className='text-custom-xs font-normal text-white leading-custom-xl'>{obj.item}</a>
-                                </li>
-                            </ul>
+                            <Link key={i} to={obj.link}
+                                className='flex gap-1 flex-row justify-center items-center text-custom-xs font-normal text-white leading-custom-xl relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:h-0.5 after:bg-white pb-0.5'>
+                                {obj.item}
+                            </Link>
                         ))}
                         <form className='lg:hidden flex max-w-48 justify-between py-[7px] px-3.5 border border-white w-full rounded-[5px]'>
                             <input type="text" placeholder='Search by Keyword' required className='!outline-none !bg-transparent placeholder:text-white placeholder:text-custom-xs placeholder:font-normal text-white text-custom-xs font-normal w-full placeholder:leading-custom-xl leading-custom-xl' />
