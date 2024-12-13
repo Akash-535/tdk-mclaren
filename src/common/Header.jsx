@@ -28,8 +28,8 @@ const Header = () => {
         <div className='overflow-hidden mx-auto bg-tory-blue pb-4 max-lg:py-1'>
             <div className='flex lg:flex-col max-lg:justify-between max-lg:items-center max-lg:pr-5'>
                 <div className='flex w-full justify-between lg:bg-congress-blue max-xl:pl-5 max-xl:pr-3'>
-                    <div className="container lg:flex lg:w-full lg:justify-between lg:pt-2">
-                        <img className='max-w-[115px] max-h-6 max-md:max-w-20' src="./assets/images/webp/logo.webp" alt="logo" />
+                    <div className="container lg:flex lg:w-full lg:justify-between ">
+                        <img className='max-w-[115px] max-h-6 max-md:max-w-20 lg:pt-2' src="./assets/images/webp/logo.webp" alt="logo" />
                         <img className='max-w-[427px] max-lg:hidden' src="./assets/images/webp/header-img.webp" alt="logo" />
                     </div>
                 </div>
