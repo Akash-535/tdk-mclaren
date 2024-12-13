@@ -25,13 +25,12 @@ const Header = () => {
         };
     }, [open]);
     return (
-        <div className='overflow-hidden mx-auto bg-tory-blue pb-4'>
+        <div className='overflow-hidden mx-auto bg-tory-blue pb-4 max-lg:pb-1'>
             <div className='flex lg:flex-col max-lg:justify-between max-lg:items-center max-lg:pr-5'>
                 <div className='flex w-full justify-between lg:bg-congress-blue max-xl:pl-5 max-xl:pr-3'>
-                    <div className="container flex lg:w-full lg:justify-between items-baseline max-lg:gap-1">
+                    <div className="container lg:flex lg:w-full lg:justify-between">
                         <img className='max-w-[115px] max-h-6 max-md:max-w-20' src="./assets/images/webp/logo.webp" alt="logo" />
                         <img className='max-w-[427px] max-lg:hidden' src="./assets/images/webp/header-img.webp" alt="logo" />
-                        <p className='lg:hidden text-white text-sm font-medium text-end'>GLOBAL</p>
                     </div>
                 </div>
                 <div className='flex justify-between w-full pt-[27px] items-end container max-xl:pl-5 max-xl:pr-3'>
