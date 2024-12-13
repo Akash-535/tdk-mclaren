@@ -16,7 +16,7 @@ const MySwiper = () => {
             pagination={{
                 clickable: true,
             }}
-            modules={[Autoplay, Pagination]} className="mySwiper !pb-12 !pt-20 max-lg:!pt-12 max-sm:!pt-8">
+            modules={[Autoplay, Pagination]} className="mySwiper !pb-12">
             {MY_SWIPER_LIST.map((obj, i) => (
                 <SwiperSlide key={i}>
                     <img className='max-h-[665px] w-full max-w-[1440px] mx-auto' src={obj} alt="" />
